@@ -277,8 +277,8 @@ export default function UsersPage() {
         </div>
       </div>
 
-      <div className="overflow-hidden rounded-2xl border-none bg-white shadow-sm ring-1 ring-gray-100">
-        <Table>
+      <div className="overflow-x-auto rounded-2xl border-none bg-white shadow-sm ring-1 ring-gray-100">
+        <Table className="min-w-[700px]">
           <TableHeader>
             <TableRow className="border-gray-50 hover:bg-transparent">
               <TableHead className="h-14 px-6 text-[10px] font-black uppercase tracking-[0.2em] text-gray-400">User</TableHead>

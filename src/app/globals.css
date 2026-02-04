@@ -73,8 +73,40 @@
   * {
     border-color: hsl(var(--border));
   }
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
   body {
     background-color: hsl(var(--background));
     color: hsl(var(--foreground));
+    overflow-x: hidden;
+  }
+}
+
+/* Performance optimizations */
+@layer utilities {
+  .will-change-transform {
+    will-change: transform;
+  }
+  
+  .contain-layout {
+    contain: layout;
+  }
+  
+  .contain-paint {
+    contain: paint;
+  }
+  
+  /* Prevent content from overflowing */
+  .overflow-wrap-anywhere {
+    overflow-wrap: anywhere;
+  }
+  
+  /* Hardware accelerated animations */
+  .gpu-accelerated {
+    transform: translateZ(0);
+    backface-visibility: hidden;
   }
 }

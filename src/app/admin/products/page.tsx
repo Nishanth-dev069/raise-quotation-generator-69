@@ -451,8 +451,8 @@ export default function ProductsPage() {
         </div>
       </div>
 
-      <div className="rounded-2xl border bg-white shadow-sm overflow-hidden">
-        <Table>
+      <div className="rounded-2xl border bg-white shadow-sm overflow-x-auto">
+        <Table className="min-w-[800px]">
           <TableHeader>
             <TableRow className="bg-gray-50/50 hover:bg-gray-50/50">
               <TableHead className="w-20 px-6">Image</TableHead>

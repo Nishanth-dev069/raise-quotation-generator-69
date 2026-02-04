@@ -85,8 +85,8 @@ export default function QuotationsTrackingPage() {
         </div>
       </div>
 
-      <div className="rounded-xl border bg-white shadow-sm overflow-hidden">
-        <Table>
+      <div className="rounded-xl border bg-white shadow-sm overflow-x-auto">
+        <Table className="min-w-[700px]">
           <TableHeader>
             <TableRow>
               <TableHead>Number</TableHead>

@@ -322,7 +322,7 @@ const pdfBlob = await generateQuotationPDF({
       )}
 
       {/* Sidebar */}
-      <aside className={`fixed inset-y-0 left-0 z-50 w-64 border-r border-gray-100 bg-white transition-transform duration-300 lg:translate-x-0 ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'}`}>
+      <aside className={`fixed inset-y-0 left-0 z-50 w-64 flex-shrink-0 border-r border-gray-100 bg-white transition-transform duration-300 lg:relative lg:translate-x-0 ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'}`}>
         <div className="flex h-full flex-col">
           <div className="flex h-20 items-center justify-between px-6">
             <div className="flex items-center gap-3">
@@ -388,7 +388,7 @@ const pdfBlob = await generateQuotationPDF({
       </aside>
 
       {/* Main content */}
-      <main className="flex-1 transition-all lg:pl-64">
+      <main className="flex-1 min-w-0 overflow-x-hidden transition-all lg:pl-0">
         {/* Mobile Header */}
         <div className="sticky top-0 z-30 flex h-16 items-center justify-between border-b border-gray-100 bg-white/80 px-6 backdrop-blur-md lg:hidden">
           <button onClick={() => setIsSidebarOpen(true)}>
